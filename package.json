@@ -1,0 +1,20 @@
+{
+  "name": "full-stack-app-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisisPauline/test-fullstack-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThisisPauline/test-fullstack-app/issues"
+  },
+  "homepage": "https://github.com/ThisisPauline/test-fullstack-app#readme"
+}
