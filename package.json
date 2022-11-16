@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -n front,back -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm --prefix ./front-end run dev\" \"npm --prefix ./back-end run dev\"",
+    "dev-front": "npm --prefix ./front-end run dev",
+    "dev-back": "npm --prefix ./back-end run dev"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ThisisPauline/test-fullstack-app/issues"
   },
-  "homepage": "https://github.com/ThisisPauline/test-fullstack-app#readme"
+  "homepage": "https://github.com/ThisisPauline/test-fullstack-app#readme",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
 }
