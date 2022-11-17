@@ -12,6 +12,8 @@ app.use(cors());
 
 const movieRouter = require("./movies/movieRouter");
 
+app.use(express.json());
+
 app.use("/movies", movieRouter);
 
 app.get("/", (req, res) => {
